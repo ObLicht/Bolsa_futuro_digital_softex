@@ -1,0 +1,41 @@
+1. Contar vogais e consoantes
+Descrição: Leia uma frase do usuário e mostre quantas vogais e consoantes há (ignore
+espaços, números e pontuação).
+Exemplo:
+Entrada: Programar é divertido!
+Saída: Vogais: 8 | Consoantes: 10
+Dica: use lower(), isalpha() e verifique se o caractere está em 'aeiou'. Um for
+sobre cada caractere ajuda.
+
+2.Descrição: Leia uma palavra/frase e diga se é palíndromo (mesma leitura ao contrário),
+ignorando espaços e diferenças de maiúsculas/minúsculas.
+Exemplo:
+Entrada: Socorram me subino onibus em marrocos
+Saída: É palíndromo
+
+3.Descrição: Leia uma frase e mostre quantas vezes cada palavra aparece. 
+Exemplo: 
+Entrada: eu gosto de python e eu gosto de programar 
+Saída: 
+eu: 2 
+gosto: 2 
+de: 2 
+python: 1 
+e: 1 
+programar: 1
+
+4. Descrição: Leia uma senha e informe se ela é forte. Defina como forte se tiver pelo menos 
+8 caracteres, letra minúscula, letra maiúscula e número. 
+Exemplo: 
+Entrada: C0digoLegal → Saída: Senha forte 
+Entrada: codigo → Saída: Senha fraca 
+Dica: use any(c.islower() for c in s), any(c.isupper() for c in s) e 
+any(c.isdigit() for c in s). Verifique também len(s) >= 8. 
+
+5.Descrição: Leia um nome de curso/expressão e gere o acríonimo (iniciais em maiúsculo), 
+ignorando palavras comuns como de, da, do, das, dos, e. 
+Exemplo: 
+Entrada: linguagens de programação e estruturas de dados 
+Saída: LPED 
+Dica: split() para separar; pule palavras “stopwords”; pegue a primeira letra de cada 
+palavra válida com word[0].upper(); junte com "".join(...).
