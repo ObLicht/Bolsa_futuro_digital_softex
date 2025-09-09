@@ -1,0 +1,50 @@
+1.Explique com suas palavras qual é a principal diferença entre a programação estrutural e a programação orientada a objetos.
+- Programação estrutural está ligada a ordem lógica das estruturas utilizadas(função, dicionário..).E a Orientada a objetos,
+é composta por classes que geram objetos, para manipular items comuns as pessoas(Ex:carro).
+
+2.Observe o código abaixo. Qual é a saída do print?
+4 4 4 -> Não teve alteração no número de rodas em nenhum momento.
+
+3.Qual a função do método especial __init__ em uma classe Python? O que acontece se você esquecer de implementá-lo?
+- Ela recebe as variáveis de instância/ atributos de intância, que compõe o objeto, ou seja, sem ela, existe as variáveis
+da classe, mas não compõe objetos diferentes de forma diferentes.
+
+4.Analise o seguinte código e explique o que acontecerá ao final. Depois, corrija o problema.
+- Não tem "__init__", alunos é um atributo da classe.
+
+class Sala:
+    def __init__(self):
+        self.alunos = []    -> Acrescenta só o __init__ e resolve.
+
+5.Por que usamos @property em Python? Cite uma vantagem em relação a acessar diretamente atributos da instância.
+- Cria propriedades gerenciadas em classes (getter), controlando o acesso.
+
+6.Complete a classe abaixo para que area e perimetro funcionem como propriedades de leitura:
+ @property
+    def area(self):
+        return self.largura * self.altura
+
+    @property
+    def perimetro(self):
+        return 2 * (self.largura + self.altura)
+
+7.Explique a diferença entre um método de instância e um método de classe. Dê um exemplo de situação em que @classmethod é útil.
+- Método de instância: operar sobre dados de um objeto específico.
+- Método de classe: operar sobre a própria classe.
+
+8.O código abaixo deve criar uma conta e impedir depósitos inválidos (≤ 0). O que falta para que a validação funcione?
+if valor <= 0:
+    raise ValueError("O valor do depósito inferior ao permitido.")
+
+9.Implemente rapidamente uma classe Pessoa que tenha:
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def cumprimentar(self):
+        return f"Olá, eu sou {self.nome}"
+
+10.Em projetos maiores, por que a POO costuma facilitar manutenção e evolução do código em comparação com a programação estrutural?
+- Como o código é dividido em classes que podem ser distribuídas em diferentes arquivos, fica mais simples de manipular por diferentes
+pessoas.
