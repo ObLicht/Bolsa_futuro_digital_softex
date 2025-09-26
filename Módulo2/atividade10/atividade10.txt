@@ -1,0 +1,90 @@
+1 - Biblioteca Digital:
+Classes:
+- Livro
+- Autores
+- Empréstimo
+- Biblioteca - main*
+Atributos:
+Aluno(nome, matrícula)
+Livro(título, ISBN, número de páginas)
+Autores(nome, nacionalidade)
+Emprestimo(livro)
+Métodos:
+Aluno(solicitar emprestimo, devolver livro)
+Livros(Registrar novos livros, remover livros do acervo)
+Autores(Buscar livro por autor)
+Empréstimo(calcular empréstimos, histórico de emprétimos)
+-------------------------------------------------------------------------0
+2- Aplicativo de Transposte
+Classes:
+- Passageiro
+- Motoristas
+- Transporte
+- Main
+Atributos:
+Passageiro(nome, telefone, histórico de corridas)
+Motoristas(Cnh, placa do veiculo, avaliação média)
+Transporte(percurso, pagamento)
+Método:
+Motorista(avaliar, avaliação média)
+Passageiro(Adicionar corrida ao histórico, remover corrida)
+Transporte(Valor da corrida, registrar pagamento, cancelamento, reembolso)
+--------------------------------------------------------------------------
+3 - Escola de Música:
+Classes:
+- Professores
+- Alunos 
+- Disciplinas
+	- Violão
+	- Piano
+	- Canto
+- Main
+Atributos:
+Professores(Nome, disciplina)
+Alunos(Nome, matricula, idade, nível)
+Disciplina(Horario, valor da mensalidade)
+Métodos:
+professores(Nova turma, registrar presença do aluno, cancelar matrícula, adicionar aluno)
+Alunos(inscrição na discplina)
+displinas(verificar carga horaria, verificar alunos na disciplina ->sons)
+-----------------------------------------------------------------------------------------
+4 - Sistema de Hotelaria 
+Classes:
+- Hotel - main
+- Quartos
+- Hospedes
+Atributos:
+Quartos(numero, tipo, status)
+Hospedes(nome, documento)
+Método:
+Hospedes(adicionar check in, adicionar check out, reservar quarto)
+Quartos(alterar status)
+hotel(verificar total clientes)
+-------------------------------------------------------------------------------------------
+5 - Loja online:
+Classes:
+- Estoque 
+- produto
+- clientes
+- loja - main
+Atributos:
+produto(nome, preco, quantidade no estoque)
+cliente(nome, email, senha, endereço)
+Métodos:
+cliente(criar conta, adicionar ao carrinho, remover do carrinho, finalizar pedido)
+estoque(adicionar produto ao estoque, remover produto do estoque)
+produto(alterar preco, alterar quantidade)
+-------------------------------------------------------------------------------------------
+6 - Rede Social de Fotos:
+Classes:
+- Usuário
+- Feed
+- Mensager
+Atributos:
+Usuario(nome, email, senha)
+Feed(foto)
+Mensager(usuario)
+Métodos:
+usuario(criar perfil, apagar perfil, alterar nome)
+feed(adicionar publicação, remover publicação, comentar publicação, curtir publicação, adicionar legenda)
+mensager(enviar mensagem, apagar mensagem)
